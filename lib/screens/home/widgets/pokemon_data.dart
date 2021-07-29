@@ -15,7 +15,7 @@ class PokemonData extends StatelessWidget {
     return Container(
       color: blueTheme,
       child: Padding(
-        padding: const EdgeInsets.all(18.0),
+        padding: const EdgeInsets.all(0.0),
         child: Column(
           children: [
             Text(

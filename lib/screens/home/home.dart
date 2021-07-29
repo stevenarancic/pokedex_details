@@ -35,8 +35,15 @@ class Home extends StatelessWidget {
               ),
             ),
             Container(
+              padding: const EdgeInsets.all(20),
               margin: EdgeInsets.all(22),
-              color: blueTheme,
+              decoration: BoxDecoration(
+                shape: BoxShape.rectangle,
+                borderRadius: BorderRadius.all(
+                  Radius.circular(8.0),
+                ),
+                color: blueTheme,
+              ),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
@@ -49,20 +56,23 @@ class Home extends StatelessWidget {
                             type: "Altura",
                             value: "0.6",
                           ),
+                          SizedBox(
+                            height: 16,
+                          ),
                           PokemonData(
                             type: "Tipo",
                             value: "fogo",
                           ),
                         ],
                       ),
-                      SizedBox(
-                        height: 16,
-                      ),
                       Column(
                         children: [
                           PokemonData(
                             type: "Peso",
                             value: "8.5 kg",
+                          ),
+                          SizedBox(
+                            height: 16,
                           ),
                           PokemonData(
                             type: "Habilidade",
