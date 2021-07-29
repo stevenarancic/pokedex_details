@@ -34,36 +34,41 @@ class Home extends StatelessWidget {
                 "Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da ponta da cauda.",
               ),
             ),
-            Card(
+            Container(
               margin: EdgeInsets.all(22),
               color: blueTheme,
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      PokemonData(
-                        type: "Altura",
-                        value: "0.6",
+                      Column(
+                        children: [
+                          PokemonData(
+                            type: "Altura",
+                            value: "0.6",
+                          ),
+                          PokemonData(
+                            type: "Tipo",
+                            value: "fogo",
+                          ),
+                        ],
                       ),
-                      PokemonData(
-                        type: "Peso",
-                        value: "8.5",
+                      SizedBox(
+                        height: 16,
                       ),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 16,
-                  ),
-                  Row(
-                    children: [
-                      PokemonData(
-                        type: "Tipo",
-                        value: "fogo",
-                      ),
-                      PokemonData(
-                        type: "Habilidade",
-                        value: "Chama",
+                      Column(
+                        children: [
+                          PokemonData(
+                            type: "Peso",
+                            value: "8.5 kg",
+                          ),
+                          PokemonData(
+                            type: "Habilidade",
+                            value: "Chama",
+                          ),
+                        ],
                       ),
                     ],
                   ),
