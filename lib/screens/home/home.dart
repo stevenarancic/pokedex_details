@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pokedex_details/screens/home/widgets/extension_string.dart';
 import 'package:pokedex_details/screens/home/widgets/pokemon_data.dart';
 import 'package:pokedex_details/styles.dart';
 
@@ -59,9 +60,17 @@ class Home extends StatelessWidget {
                           SizedBox(
                             height: 16,
                           ),
-                          PokemonData(
-                            type: "Tipo",
-                            value: "fogo",
+                          Text(
+                            "Tipo",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
+                            ),
+                          ),
+                          ExtensionString(
+                            elementText: "Fogo",
+                            backgroundColor: orangeTheme,
                           ),
                         ],
                       ),
