@@ -94,6 +94,41 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 22),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        "Fraquezas",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      ExtensionString(
+                        elementText: "Água",
+                        backgroundColor: blueTheme_2,
+                      ),
+                      ExtensionString(
+                        elementText: "Terra",
+                        backgroundColor: yellowTheme,
+                      ),
+                      ExtensionString(
+                        elementText: "Rocha",
+                        backgroundColor: darkYellowTheme,
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
